@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pharmaCare - Blockchain Based</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" /> -->
+
+   
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <!-- <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div> -->
+            <div class="header__top__right__auth">
+                
+                <button type="button" onclick="loginClick()"><i class="fa fa-user"></i>Login</button>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>                       
+                    </ul>
+                </li>
+                <li><a href="./shop-grid.html">Categories</a></li>
+                
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> info@pharmacare.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> info@pharmacare.com</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <!-- <div class="header__top__right__language">
+                                <img src="img/language.png" alt="">
+                                <div>English</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div> -->
+                            <div class="header__top__right__auth">
+                                <a onclick="loginClick()" style="cursor: pointer;"><i class="fa fa-user"></i>Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo1.png" alt="" width="150 px" height="50px"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>                           
+                         
+                            <li><a onclick="clicked(this);" id="All"  style="cursor: pointer;">Categories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <!-- <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-12">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form >
+                                <!-- <div class="hero__search__categories">
+                                    All Categories
+                                    <span class="arrow_carrot-down"></span>
+                                </div> -->
+                                <input type="text" class="form-control" placeholder="What do yo u need?" id="medicinesearchbyEndUser">
+                                <button type="button" class="site-btn" onclick="App.searchMedicineByEndUser()">SEARCH</button>
+                            </form>
+                        </div>
+                        <!-- <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>support 24/7 time</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="row" id="displaysearchedmedicine1" style="display: none;">
+                        <div class="col" style="text-align: center;">
+                                <!-- Product searching page -->
+                                <h3 style="font-weight: 800; color: black;">Searched Products</h3>
+                                <div  id="displaysearchedmedicine" style="display: none;">
+                                    
+                                </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                        <div class="hero__text">
+                            <span>PHARMA CARE</span>
+                            <h2>A Blockchain based Platform <br> to sell and buy Medicines</h2>
+                            <p>100% transparent</p>
+                            <a onclick="clicked(this);" id="All" class="primary-btn" style="cursor: pointer;">SHOP ALL MEDICINES</a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+           
+            <div class="row ">
+                    <div class="col col-12 col-lg-3 col-md-3" >
+                        <a onclick="clicked(this);" id="Antibiotics" style="cursor: pointer;">
+                            <img src="./img/categories/cat-1.jpg" class="img-responsive" >
+                            <h5><a href="./shop-grid.html">Antibiotics</a></h5>
+                        </a>
+
+                    </div>
+                    <div class="col col-12 col-lg-3 col-md-3">
+                        <a onclick="clicked(this);" id="Analgesics" style="cursor: pointer;">
+                            <img src="./img/categories/cat-2.jpg" class="img-responsive">
+                            <h5><a href="./shop-grid.html">Analgesics</a></h5>
+                        </a>
+
+                    </div>
+                    <div class="col col-12 col-lg-3 col-md-3">
+                        <a onclick="clicked(this);" id="Cardiovascular" style="cursor: pointer;">
+                            <img src="./img/categories/cat-3.jpg" class="img-responsive">
+                            <h5><a href="./shop-grid.html">Cardiovascular</a></h5>
+                        </a>
+
+                    </div>
+                    <div class="col col-12 col-lg-3 col-md-3">
+                        <a onclick="clicked(this);" id="Antidiabetics" style="cursor: pointer;">
+                            <img src="./img/categories/cat-4.jpg" class="img-responsive">
+                            <h5><a href="./shop-grid.html">Antidiabetics</a></h5>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Trending Medicines on pharmaCare</h2>
+                        <!-- <div class="row cat-pd">
+                            <div class="col-md-4 col-lg-12">
+                               <div id="showAllMedicines">
+                            
+                               </div>             
+                            </div>
+                         </div> -->
+                    </div>
+                    <!-- <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".oranges">Oranges</li>
+                            <li data-filter=".fresh-meat">Fresh Meat</li>
+                            <li data-filter=".vegetables">Vegetables</li>
+                            <li data-filter=".fastfood">Fastfood</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row" id="showAllMedicines">              
+                   
+               
+            </div>
+            <!-- <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="section-title" style="width: 100%;">
+                    <h2>pharmaCare Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="banner__pic">
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                            <h4 class="title"><a href="">Explore Authentic and TamperProof Medicines tailored to you.</a></h4>
+                            <p class="description">All Medicines listed on pharmaCare are stored on the blockchain. You can verify the authenticity and complete history of each medicine. Buy your trustworthy medicine from here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="banner__pic">
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="title"><a href="">List your Medicines on pharmaCare and grow your business.</a></h4>
+                            <p class="description">If you are a medicine manufacturer or a distributor, you can list your products here. All products will be verified from pharmaCare and will be stored on our blockchain network.</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="banner__pic">
+                       <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <h4 class="title"><a href="">certificateOK</a></h4>
+                        <p class="description">certificateOK is a certification authority used to validate authenticity of Manufactures and Medicines on our platform.</p>
+                     </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="left-f-box">
+                        <h4>Manufacturer</h4>
+                            <ul>
+                                <li><a href="#">Create account</a></li>
+                                <li><a href="#">How it works </a></li>
+                                <li><a href="#">FAQ for Manufacturers</a></li>
+                            </ul>                  
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="left-f-box">
+                        <h4>BUY Medicines</h4>
+                       
+                        <ul>
+                           <li><a href="#">Create account</a></li>
+                           <li><a href="category.html">Categories</a></li>
+                           <li><a href="#">FAQ for buyers</a></li>
+                        </ul>                
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="left-f-box">
+                        <h4>COMPANY</h4>
+                        
+                        <ul>
+                           <li><a href="#">About pharmaCare</a></li>
+                           <li><a href="#">Contact us</a></li>
+                           <li><a href="#">Careers</a></li>
+                           <li><a href="#">Terms of use</a></li>
+                        </ul>                 
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="left-f-box">
+                        <h4>CATEGORIES</h4>
+                            <ul>
+                                <li><a href="./shop-grid.html">Antibiotics</a></li>
+                                <li><a href="./shop-grid.html">Analgesics</a></li>
+                                <li><a href="./shop-grid.html">Cardiovascular</a></li>
+                                <li><a href="./shop-grid.html">Antidiabetics</a></li> 
+                            </ul>                 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="left-f-box">
+                        <h4>DISCLAIMER</h4>
+                        <a  href="#">This website does not belong to a real company. It is a Planspiel Web Engineering project.</a>              
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved. pharmaCare 
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <!-- <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+   
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>    
+    <script src="js/truffle-contract.js"></script>
+    <script src="./js/app.js"></script>
+    
+
+
+
+
+  
+
+
+
+</body>
+
+</html>
